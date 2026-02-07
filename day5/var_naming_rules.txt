@@ -1,0 +1,12 @@
+an variable is an container whhich can different types of data init 
+an variable stores one value at a time at a time
+an variable is dynamic i.e.mutable or changable (only for list,dict,set)
+When it comes to naming of variable there are certain rules one need to follow:
+*Variables cannot be nammed with numbers (1,2,3,4,...)
+*Variables can be nammed with alphabets as their starting letter
+*Variables can contain numbers (a1,a4,abc2dd,..)
+*Variables are case sensitive 
+*Variables cannot contain any special characters except "_"
+
+
+note : naming of an variable must be logical and clean,keyword cannot be used for naming
