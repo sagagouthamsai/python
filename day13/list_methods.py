@@ -21,5 +21,8 @@ print(lst3)
 lst=[1,2,"a","b","hello"]
 print(lst[1:4]) 
 
-
+#list index function
+#index : it is used to find the index of the first occurrence of an element in the list
+lst=[1,2,"a","b","hello"]
+print(lst.index("a")) 
 
