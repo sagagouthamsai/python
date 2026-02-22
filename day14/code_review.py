@@ -93,3 +93,33 @@ Modify by assigning new value
 first_element = mylist[0]
 mylist[1] = 10
 
+"""
+List Comprehension Interview
+Candidate: Goutham Sai
+"""
+
+# 1) Create squares from 0 to 9
+squares = [x * x for x in range(10)]
+print(squares)
+
+
+# 2) Extract even numbers from a list
+nums = [1, 2, 3, 4, 5, 6, 7, 8]
+evens = [x for x in nums if x % 2 == 0]
+print(evens)
+
+
+# 3) Extract odd numbers
+odds = [x for x in nums if x % 2 != 0]
+print(odds)
+
+
+# 4) Convert all strings to uppercase
+words = ["python", "list", "comprehension"]
+upper_words = [w.upper() for w in words]
+print(upper_words)
+
+
+# 5) Filter strings with length > 4
+long_words = [w for w in words if len(w) > 4]
+print(long_words)
