@@ -15,4 +15,4 @@ print("---------------------------------------------------")
 for item in my_tuple:
     if my_tuple.count(item) > 1:
         print(my_tuple[item])
-.
+#.
