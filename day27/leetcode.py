@@ -1,0 +1,20 @@
+"""
+bin_n=bin(5)
+print(bin_n)
+bit_count=0
+for i in bin_n:
+    if i=="1":
+        bit_count+=1
+    else:
+        continue
+print(bit_count)
+"""
+
+"""
+n=43261596
+bin_n=(f"{n:032b}")
+print(int(bin_n[::-1],2))
+
+
+print(int(f"{n:032b}"[::-1],2))
+"""
