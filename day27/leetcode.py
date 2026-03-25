@@ -18,3 +18,8 @@ print(int(bin_n[::-1],2))
 
 print(int(f"{n:032b}"[::-1],2))
 """
+
+s="   fly me   to   the moon  "
+split_s=s.split()
+print(split_s)
+print(len(split_s[-1]))
