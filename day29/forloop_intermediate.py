@@ -44,3 +44,16 @@ for i in str(n):
     a.append(int(i)**int(len_value))
 if sum(a)==n:
     print("Armstrong Number")
+
+#Find Missing Number in List
+input_value=[1,2,3,5]
+for i in range(input_value[0],input_value[-1]):
+    if i not in input_value:
+        print(i)
+
+#Print Fibonacci Series Using For Loop
+n=7
+a,b=0,1
+for i in range(1,n):
+    print(a,end=" ")
+    a,b=b,a+b
