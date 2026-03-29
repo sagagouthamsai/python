@@ -57,3 +57,22 @@ a,b=0,1
 for i in range(1,n):
     print(a,end=" ")
     a,b=b,a+b
+print(" ")
+
+#Find All Pairs With Given Sum
+input_list=[1,2,3,4,5]
+target_sum=6
+pairs=[]
+for i in input_list:
+    for j in range(i+1,len(input_list)):
+        if i+input_list[j]==target_sum:
+            pairs.append((i,input_list[j]))
+print(pairs)
+
+#Pattern — Number Triangle
+n=5
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+
