@@ -36,3 +36,21 @@ for i in range(1,num+1):
     temp.clear()
 print(count)
 """
+
+s = "IceCreAm"
+S_list=list(s)
+vowels="aeiouAEIOU"
+right=0
+left=len(s)-1
+print(left)
+while right<left:
+    if S_list[right] not in vowels:
+        right+=1
+    elif S_list[left] not in vowels:
+        left-=1
+    else:
+     S_list[right],S_list[left]=S_list[left],S_list[right]
+     right+=1
+     left-=1
+
+print("".join(S_list))
