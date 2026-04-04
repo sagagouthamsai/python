@@ -26,3 +26,4 @@ def outer():
         x = 20  
     inner()
 print(x)
+
