@@ -1,3 +1,4 @@
+
 #global and local variables
 x = 10  # global variable
 
