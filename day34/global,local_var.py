@@ -28,3 +28,4 @@ def outer():
     inner()
 print(x)
 
+
