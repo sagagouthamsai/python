@@ -11,4 +11,8 @@ def add(*numbers):
 add(1, 2, 3)
 
 #kargs
-#this allows us to pass multiple dict arguments
+#this allows us to pass multiple dict arguments as parameters in a function
+def person(**details):
+    print(details)
+person(name="John", age=30, city="New York")
+
