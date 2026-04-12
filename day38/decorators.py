@@ -6,6 +6,7 @@ def decorator(func
         return func(a, b) * 2
     return wrapper
 
+
 @decorator
 def add(a, b):
     return a + b
