@@ -7,8 +7,11 @@ def func_call_count(func):
         res=func(*args,**kwargs)
         print(res)
         print("The function call count : ",count)
-
+        return wrapper
+@func_call_count
 def add(*args):
-    return sum(*args)
+    return sum(args)
+
+
 
 print(add(1,2))
