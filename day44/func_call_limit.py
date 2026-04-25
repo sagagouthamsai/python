@@ -6,6 +6,7 @@ def limit_calls(func):
             print("Limit reached")
             return
         count+=1
+        print("The function name is ",func.__name__)
         return func(*args,**kwargs)
     return count_check
 
