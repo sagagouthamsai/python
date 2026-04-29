@@ -1,12 +1,12 @@
 
-def countBits(self, n: int) -> List[int]:
+def countBits(n: int) -> list[int]:
     ans=[]
     for i in range(n+1):
         ans.append(bin(i).count("1"))
     return ans
 
 
-def evenNumberBitwiseORs(self, nums: List[int]) -> int:
+def evenNumberBitwiseORs( nums: list[int]) -> int:
         temp=[]
         for i in nums:
             if bin(i).endswith("0"):
@@ -16,4 +16,7 @@ def evenNumberBitwiseORs(self, nums: List[int]) -> int:
             res=res|i
         return res
 
+print(countBits(8))
 
+a=evenNumberBitwiseORs([1,2,3,4,5,6])
+print(a)
