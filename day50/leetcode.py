@@ -13,4 +13,19 @@ class Solution:
                     x-=1
             return x==y==0
 
-                
+
+s="RLRRLLRLRL"         
+countr=0
+countl=0
+ans=0
+l=len(s)
+for i in range(l):
+    if s[i]=="R":
+        countr+=1
+    elif s[i]=="L":
+        countl+=1
+    if countr==countl:
+        print(countr,countl)
+        ans+=1
+            
+print(ans)
