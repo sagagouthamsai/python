@@ -41,3 +41,18 @@ for i in res:
     if i>2:
         count+=i
 print(count//2)
+
+def search(self, nums: List[int], target: int) -> int:
+    l=len(nums)
+    left=0
+    right=l-1  
+
+    while left <= right:
+        mid=(left+right)//2
+        if nums[mid]==target:
+            return mid
+        elif target>nums[mid]:
+            left=mid+1
+        else:
+            right=mid-1
+    return -1
