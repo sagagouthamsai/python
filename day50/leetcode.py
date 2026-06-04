@@ -43,6 +43,7 @@ for i in res:
 print(count//2)
 
 def search(self, nums: List[int], target: int) -> int:
+    
     l=len(nums)
     left=0
     right=l-1  
