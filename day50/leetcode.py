@@ -57,3 +57,12 @@ def search(self, nums: List[int], target: int) -> int:
         else:
             right=mid-1
     return -1
+
+def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+    l=len(heights)
+    for i in range(l):
+        for j in range(l-1-i):
+            if heights[j]<heights[j+1]:
+                heights[j],heights[j+1] = heights[j+1],heights[j]
+                names[j],names[j+1] = names[j+1],names[j]
+    return names
