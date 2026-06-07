@@ -17,9 +17,8 @@ class Rectangle(Shape):
         return self.length*self.breadth
 
 
+
+
 r = Rectangle(5, 4)
 
 print(r.area())
-
-
-
