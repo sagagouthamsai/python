@@ -160,3 +160,21 @@ def manual_sort(nums):
                 nums[i], nums[j] = nums[j], nums[i]
 
     return nums
+
+#75 -- Sort Colors
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        l = len(nums)
+
+        for i in range(l):
+            c = i
+
+            for j in range(i + 1, l):
+                if nums[c] > nums[j]:
+                    c = j
+
+            nums[i], nums[c] = nums[c], nums[i]
+
+        return nums
+
+
