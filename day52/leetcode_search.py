@@ -177,4 +177,15 @@ class Solution:
 
         return nums
 
+#LeetCode #283 — Move Zeroes
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        l = len(nums)
+        p = 0
 
+        for i in range(l):
+            if nums[i] != 0:
+                nums[i], nums[p] = nums[p], nums[i]
+                p += 1
+
+        return nums
