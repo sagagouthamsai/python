@@ -189,5 +189,22 @@ class Solution:
                 p += 1
 
         return nums
+    
+#202 — Happy Number
+class Solution:
+    def isHappy(self, n: int) -> bool:
+        s = set()
+
+        while n != 0 and n not in s:
+            s.add(n)
+
+            sum = 0
+
+            for i in str(n):
+                sum += int(i) ** 2
+
+            n = sum
+
+        return n == 1
 
     
