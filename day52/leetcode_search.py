@@ -206,5 +206,6 @@ class Solution:
             n = sum
 
         return n == 1
+        
 
     
