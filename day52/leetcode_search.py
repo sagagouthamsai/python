@@ -9,7 +9,8 @@ class Solution:
         m = max(candies)
         res = [True if i + extraCandies >= m else False for i in candies]
         return res
-    
+
+
 #1672 — Richest Customer Wealth
 class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
