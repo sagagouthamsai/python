@@ -4,7 +4,8 @@ def merge_sort(arr):
     l=0
     r=len(arr)-1
     p=(l+r)//2
-    left=
+    left=arr[:p]
+    right=arr[p:]
 
 arr = [8, 3, 5, 1]
 
