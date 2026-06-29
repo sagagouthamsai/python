@@ -7,6 +7,7 @@ def merge_sort(arr):
     left=arr[:p]
     right=arr[p:]
 
+
 arr = [8, 3, 5, 1]
 
 print(merge_sort(arr))
