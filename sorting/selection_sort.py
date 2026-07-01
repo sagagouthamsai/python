@@ -5,6 +5,7 @@ def selection(arr):
         for j in range(i+1,l):
             if arr[m]>arr[j]:
                 m=j
+                
         arr[i],arr[m]=arr[m],arr[i]
     return arr
     
