@@ -1,0 +1,13 @@
+def merge_sort(arr):
+    if len(arr)<=1:
+        return arr 
+    l=0
+    r=len(arr)-1
+    p=(l+r)//2
+    left=merge_sort(arr[:p])
+    right=merge_sort(arr[p:])
+
+    return merge_sort(left)
+arr = [8, 3, 5, 1]
+
+print(merge_sort(arr))
