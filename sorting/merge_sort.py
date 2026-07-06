@@ -48,6 +48,7 @@ def mergesort(arr):
     while i<len(left):
         res.append(left[i])
         i+=1
+        
     while j<len(right):
         res.append(right[j])
         j+=1
