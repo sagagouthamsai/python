@@ -9,7 +9,7 @@ def stbcnt(arr):
     for i in range(1,m):  #prefix sum
         cnt[i]+=cnt[i-1]
         
-    for i in arr:  #travesing
+    for i in reversed(arr):  #travesing
         res[cnt[i]-1]=i
         cnt[i]-=1
     return res
