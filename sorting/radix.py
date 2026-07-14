@@ -5,8 +5,8 @@ def count(arr,exp):
 
     for x in arr:
         num=x//exp
-        cnt[x%10]+=1
-    for i in cnt[1,10]:
+        cnt[num%10]+=1
+    for i in range(1,10):
         cnt[i]+=cnt[i-1]
 
     for i in reversed(arr):
@@ -21,4 +21,10 @@ def radix(arr):
     m=max(arr)
 
     while m//exp>0:
+        count(arr,exp)
+        exp*=10
+
+    return arr
+arr=[1,99,999,3,4,2,1,111,2,3,66,5,44,111,1]
+print(radix(arr))
 
