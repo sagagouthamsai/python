@@ -34,4 +34,5 @@ def is_prime(n):
         s+=2
     return r
 print(is_prime(30))
+
              
