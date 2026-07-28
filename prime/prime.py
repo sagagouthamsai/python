@@ -1,6 +1,6 @@
 def prime(n):
     if n<=2:
-        return o
+        return 0
     p=[True]*n
     p[0]=False
     p[1]=False
