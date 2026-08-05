@@ -30,6 +30,7 @@ def is_prime(n):
                 c=False
                 break
         if c:
+        
             r.append(s)
         s+=2
     return r
