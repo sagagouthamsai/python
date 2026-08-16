@@ -112,3 +112,4 @@ def count(str):
         res+=1
     return res
 print(count("a is a cloud of b"))
+
